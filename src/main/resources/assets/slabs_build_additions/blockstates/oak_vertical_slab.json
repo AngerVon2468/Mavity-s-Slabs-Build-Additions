@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north,half=bottom,shape=straight": { "model": "slabs_build_additions:block/oak_vertical_slab"},
+    "facing=south,half=bottom,shape=straight": {
+      "model": "slabs_build_additions:block/oak_vertical_slab",
+      "y": "180"
+    }
+  }
+}

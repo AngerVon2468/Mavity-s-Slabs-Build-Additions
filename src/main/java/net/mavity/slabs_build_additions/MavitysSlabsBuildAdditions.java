@@ -2,6 +2,9 @@ package net.mavity.slabs_build_additions;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mavity.slabs_build_additions.blockregister.BlockInit;
+import net.mavity.slabs_build_additions.itemregister.ItemInit;
+import net.mavity.slabs_build_additions.propertymanager.MSBAProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +22,12 @@ public class MavitysSlabsBuildAdditions implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+
+		//LOGGER
 		LOGGER.info(MavitysSlabsBuildAdditions.MOD_ID + " has registered its' main class.");
 		MavitysSlabsBuildAdditionsDataGenerator.registerMSBADataGen();
+		ItemInit.registerItemInit();
+		BlockInit.registerBlockInit();
+		MSBAProperties.registerMSBAProperties();
 	}
 }

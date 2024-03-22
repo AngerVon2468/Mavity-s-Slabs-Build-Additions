@@ -8,7 +8,7 @@ public class MavitysSlabsBuildAdditionsDataGenerator implements DataGeneratorEnt
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 
 	}
-
+	//LOGGER
 	public static void registerMSBADataGen() {
 		MavitysSlabsBuildAdditions.LOGGER.info(MavitysSlabsBuildAdditions.MOD_ID + " has registered its' Data Generator.");
 	}
