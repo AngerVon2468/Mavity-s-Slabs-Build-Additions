@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "slabs_build_additions",
+	"version": "${version}",
+	"name": "Mavity's Slabs & Build Additions",
+	"description": "A QOL & building mod to improve your builds!",
+	"authors": [
+		"Mavity The Madity"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/AngerVon2468/Mavity-s-Slabs-Build-Additions"
+	},
+	"license": "Apache License Version 2.0",
+	"icon": "assets/slabs_build_additions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mavity.slabs_build_additions.MavitysSlabsBuildAdditions"
+		],
+		"fabric-datagen": [
+			"net.mavity.slabs_build_additions.MavitysSlabsBuildAdditionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"slabs_build_additions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
