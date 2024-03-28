@@ -13,9 +13,6 @@ import net.minecraft.util.Identifier;
 
 public class BlockInit {
 
-    public static final Block OAK_VERTICAL_SLAB = registerBlock("oak_vertical_slab",
-            new VerticalSlabType(FabricBlockSettings.create().nonOpaque()));
-
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(MavitysSlabsBuildAdditions.MOD_ID, name), block);
