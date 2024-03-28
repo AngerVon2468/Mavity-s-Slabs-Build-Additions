@@ -1,9 +1,7 @@
 package net.mavity.slabs_build_additions.blockregister;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.mavity.slabs_build_additions.MavitysSlabsBuildAdditions;
-import net.mavity.slabs_build_additions.blockregister.blocktyperegister.VerticalSlabType;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
